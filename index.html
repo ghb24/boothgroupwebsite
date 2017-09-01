@@ -1,0 +1,87 @@
+---
+title: Booth Group Research 
+layout: default
+---
+<section class="box special">
+	<header class="major">
+		<h3> We develop high-accuracy, low-scaling computational tools to inform, predict
+		<br />
+		and understand chemical and material systems at the most fundamental level. </h3>
+        <p>Take a look around our site to learn more about what we do,<br /> 
+        and feel free to get in <a href="{{ site.baseurl }}/join">contact</a> with us to learn more.</p>
+	</header>
+	<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic01.jpg" alt="" /></span>
+</section>
+
+<section class="box special features">
+	<div class="features-row">
+		<section>
+			<span class="icon major fa-newspaper-o accent2"></span>
+            <h3><a href="{{ site.baseurl }}/news">Latest News</a></h3>
+            {% assign post = site.posts.first %}
+            {% assign content = post.excerpt %}
+            {% assign title = post.title %}
+
+            <strong><p>{{ title }}</p></strong>
+            <p>{{ post.excerpt | strip_html }}</p>
+            <!-- <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p> -->
+			<ul class="actions">
+                <li><a href="{{site.baseurl}}{{post.url}}" class="button alt">See full post</a></li>
+			</ul>
+		</section>
+		<section>
+			<span class="icon major fa-code-fork accent3"></span>
+            <h3><a href="{{ site.baseurl }}/join">Opportunities</a></h3>
+            <p align="justify">We are always on the lookout for motivated people to join the group! We currently have open positions for both PhD students and Postdocs.</p> 
+            <p align="justify">See the <a href="{{ site.baseurl }}/join">How to Join</a> page for more details about applying.</p>
+		</section>
+	</div>
+	<div class="features-row">
+		<section>
+			<span class="icon major fa-question-circle accent4"></span>
+            <h3><a href="{{ site.baseurl }}/about">About</a></h3>
+            <p align="justify">Who are we, and why is what we do interesting, possibly even important?! Well have a look at the <a href="{{ site.baseurl }}/about">About</a> page for a lay-person's guide to what the fuss is about in computational electronic structure, and why we do what we do.</p>
+            <p align="justify">While you're at it, why not have a look at the <a href="{{ site.baseurl }}/group">Group</a> page to see who <em>'we'</em> all are!</p>
+		</section>
+		<section>
+            <span class="icon major fa-terminal accent5"></span>
+            <!-- <span class="icon major fa-cog fa-spin accent5"></span> -->
+            <!-- <span class="icon major fa-cog fa-spin fa-3x fa-fw"></span> -->
+            <!-- <span class="sr-only">Loading...</span> -->
+            <h3><a href="{{ site.baseurl }}/research">Research</a></h3>
+            <p align="justify">Our research focuses on a number of different areas of correlated electron phenomina, including molecular, solid-state and lattice problems. We see our techniques as resulting from a particularly fruitful blending of <em>ab initio</em> quantum chemistry and solid-state physics approaches, developing and applying techniques ranging from Monte Carlo, mean-field and machine learning, to Greens function methods to understand and resolve unanswered questions about a wide variety of systems. See our <a href="{{ site.baseurl }}/research">Research</a> page for more details on the developments in the group.</p>
+            <p align="justify">We sincerly thank funding bodies for their support of this research: The Royal Society, Air Force Office of Scientific Research and the European Research Council.</p>
+            <!-- <span class="image featured"><img src="{{ site.baseurl }}/assets/images/Kings1.jpg" alt="" /></span> -->
+		</section>
+	</div>
+</section>
+
+<div class="row">
+	<div class="6u">
+
+		<section class="box special">
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+			<h3>Research Highlight</h3>
+            <p align="justify">Often, parameterizing a system via an efficient, compact, and polynomially-complex wavefunctions is something which can be done with relative ease. However, when it comes to <em>optimizing</em> these parameters using the variational principle, we have no option but to resort to stochastic, Monte-Carlo techniques. This can be exceptionally difficult when you are relying on noisy estimates at each point. With a PhD student, <a href="{{ site.baseurl }}/group/schwarz">Lauretta Schwarz</a>, we developed an improved approach, drawing on ideas from the supervised learning of neural networks, which is now published in Physical Review Letters entitled <em><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.176403">"Projector Quantum Monte Carlo Method for Nonlinear Wave Functions"</a></em>. </p>
+            <p align="justify">Above shows the short-ranged anti-ferromagnetic spin fluctuations in the ubiquitously prefixed 'wonder-material' Graphene, demonstrating the strength of the new approach</p>
+            <!--
+			<ul class="actions">
+				<li><a href="#" class="button alt">Learn More</a></li>
+			</ul>
+            -->
+		</section>
+
+	</div>
+	<div class="6u">
+
+		<section class="box special">
+            <span class="image fit"><img src="{{ site.baseurl }}/assets/images/Kings1.jpg" alt="" style="height:75%;"/></span>
+			<h3>Where we are</h3>
+            <p align="justify">Our research group is situated right in the heart of London, in <a href="https://www.kcl.ac.uk/nms/depts/physics/index.aspx">King's College London</a>. On the Strand, next door to the famous Somerset House, and overlooking the river Thames by Waterloo bridge. </p>
+			<ul class="actions">
+				<li><a href="https://goo.gl/maps/Th6Hpo3q78F2" class="button alt">See on Google Maps</a></li>
+			</ul>
+		</section>
+
+	</div>
+</div>
