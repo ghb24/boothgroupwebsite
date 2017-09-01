@@ -1,8 +1,15 @@
-name: Alpha
-description: Alphs template for Jekyll
-baseurl: '/Alpha-Jekyll-Theme'
+name: Booth Group Website 
+description:      "A Research Group at King's College London in Computational Electronic Structure"
+baseurl: '/boothgroupwebsite'
 excerpt_separator: <!-- more -->
+markdown: kramdown
+author:
+  name:           'George Booth'
+  email:          george.booth24@gmail.com
+  github_username: ghb24
 
+#url: "http://ghb24.github.io/boothgroupwebsite"
+#url: "http://ghb24.github.io/boothgroupwebsite"
 url: "http://localhost:4000"
 
 paginate: 10
