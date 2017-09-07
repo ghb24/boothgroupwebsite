@@ -12,26 +12,30 @@ layout: default
 	<div class="6u">
 
 		<section class="box special">
-            <h3>Full Configuration Interaction QMC</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+            <h3>Full Configuration Interaction Quantum Monte Carlo</h3>
             <p align="justify">
-                Four-component Relativity (with Toru Shiozaki)
-                Internally contracted formalism to combine with multi-reference perturbation theory approaches
-                Response, inc. dynamic response (developments)
-
-                Robert Anderson
-                NECI
-
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/hono-sym.jpg" alt="" align="left" style="height:50%;width:50%;margin:0px 10px" /></span>
+            FCIQMC is a recently developed quantum Monte Carlo method (together with Ali Alavi) which shows much promise in the description of correlated systems. It is a stochastic projector Monte Carlo approach which is formulated in the second quantized space of Slater determinants. While this space is exponentially large, the gauge freedom to choose the specific representation allows for a sparse representation of the wavefunction to be found, and annihilation events can then efficiently suppress the manifestation of the 'Fermion sign problem'. Further development is continuing in a number of directions to expand the scope, accuracy and efficiency of the approach in order to apply it to a range of chemical, material and lattice problems. These include:
+            <ul align="left">
+                <li> <em>Four-component relativistic formulation</em> to treat relativistic and magnetic effects on the same level as electron correlation (with <a href=http://www.shiozaki.northwestern.edu/index.php>Prof. Toru Shiozaki</a> of Northwestern University, USA)</li>
+                <li> Reformulation to compute both <em>static and dynamic response functions</em> from various perturbations</li>
+                <li> <em>Multi-scale approaches</em> to combine FCIQMC in a low-energy subspace with high-energy effects, including fully internally-contracted stochastic multireference perturbation theory, and real-space embedding techniques (see below)</li>
+            </ul>
+            </p>
+            <p align="justify">
+                Developments in FCIQMC are integrated within our efficient, parallelised <strong><tt>NECI</tt></strong> code, available to interested researchers for academic use via our github page.
             </p>
         </section>
     </div>
 	<div class="6u">
 
 		<section class="box special">
-            <h3>Stochastic approaches to Tensor Networks</h3>
+            <h3>Stochastic Approaches To Tensor Network States</h3>
 			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
             <p align="justify">
-                blah
+                We have been developing new approaches to optimize and stochastically sample certain classes of tensor network states which don't easily admit to an efficient deterministic approach. This allows for higher-dimensional networks to be considered, in a scalable approach. The approach combines ideas of projector Monte Carlo with the non-linear form of these Tensor Networks. Additionally, ideas from accelerated optimization techniques used to train neural networks render the approach scalable and robust. The above shows the spin correlation functions derived from this work of a two-dimensional, <em>ab initio</em> graphene sheet, published in <em>Physical Review Letters</em>, <strong>118</strong> 176403 (2017). This work is applied to lattice models, as well as realistic, extended systems.</p>
+            <p align="justify">
+ Continuing developments are investigating coupling of the optimization to the stochastic sampling of auxiliary indices and moving towards entangled 2D networks.
             </p>
         </section>
     </div>
@@ -42,21 +46,25 @@ layout: default
 	<div class="6u">
 
 		<section class="box special">
-            <h3>Embedded Approaches</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
-            <p align="justify">
-                Cedric 
+            <h3>Embedded Methods In The Description Of Extended Systems</h3>
+                <p align="justify"> 
+                <span class="image fit"><img src="{{ site.baseurl }}/assets/images/1D_Hub_Spectra.jpg" alt="" align="right" style="height:70%;width:70%;margin:10px 0px" /></span>
+Since two-point correlation functions decay (generally exponentially fast in insulators), we look for ways to exploit this locality to develop quantum embedding approaches. As opposed to more traditional embedding methods such as QM/MM, these approaches allow for quantum fluctuations between the embedded fragment and the environment, and therefore describing the desired <em>mixed</em> quantum state on the fragment. In the condensed matter community, <em>Dynamical Mean-field Theory</em> has been hugely successful in describing the qualitative features of Mott insulating behaviour. However, much of this physics can also be captured in a wavefunction approach known as <em>Density Matrix Embedding Theory</em> (DMET). </p>
+                <p align="justify"> 
+                    Our research in this area concerns a number of aspects to develop these approaches, both for <em>ab initio</em> and lattice models. We are combining the DMET methodology with an LDA bandstructure for realistic materials, and comparing to the successful, but more expensive LDA+DMFT approach in collaboration with <a href=https://nms.kcl.ac.uk/cedric.weber/index.html>Dr. Cedric Weber</a> and the <tt>ONETEP</tt> code. We are also looking into diagrammatic extensions to the DMET approach, including improved self-consistency conditions based on the self-energy to allow for genuine lattice correlations rather than symmetry-breaking. 
             </p>
         </section>
     </div>
 	<div class="6u">
 
 		<section class="box special">
-            <h3>Spectral Functions</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+            <h3>Spectral Functions and Theoretical Spectroscopy</h3>
             <p align="justify">
-                Spectral functions (Methods with them as the central quantum variable)
-                Stoch approaches to find them
+                Spectral functions define the dynamic response of a system to a perturbation, and are the key quantities in a wide range of theoretical spectroscopy, giving access to the entire excitation spectrum of a system. This makes these quantities often more demanding to compute, and with a poorer range of techniques to reliably compute them compared to static observables. Beyond their utility in spectroscopy, they are often also the key quantum variables in computational methods too -- especially the one-particle greens function.
+            </p>
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/Hub_Spec_KPFCIQMC.jpg" alt="" align="middle" style="height:100%;width:100%;" /></span>
+            <p align="justify">
+                We are developing new approaches to compute correlated spectral functions of systems, including stochastic techniques, and cavity approximations from statistical physics. In addition, these spectra are used to develop new approaches to multireference quantum chemistry, circumventing the need for high-rank density matrices to couple the active space to the dynamic correlation, and providing a fully screened description of the effective interactions. Above shows the bandstructure of the Hubbard model computed via a stochastic Krylov projection technique, described in <em>Physical Review Letters</em>, <strong>115</strong>, 050603 (2015).
             </p>
         </section>
     </div>
@@ -67,21 +75,22 @@ layout: default
 	<div class="6u">
 
 		<section class="box special">
-            <h3>Machine Learning</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+            <h3>Machine Learning of Quantum Systems</h3>
             <p align="justify">
-                blah
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/machinelearning.png" alt="" align="left" style="height:40%;width:40%;margin:0px 10px" /></span>
+                Can we <em>infer</em> a fully correlated wavefunction, with only partial knowledge of the amplitudes at particular points? The domain of machine learning has expanded in recent years into a powerful approach for inference and interpolation of complex functions. In collaboration with <a href=http://www.eng.cam.ac.uk/profiles/gc121>Prof. G&aacute;bor Cs&aacute;nyi</a>, we are investigating approaches of using Gaussian Processes to describe an extensive and complete wavefunction which can capture strong correlation effects. 
             </p>
         </section>
     </div>
 	<div class="6u">
 
 		<section class="box special">
-            <h3>Time Evolution</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+            <h3>Time Evolution of Electronic States</h3>
             <p align="justify">
-                blah
+                New generations of time-resolved spectroscopy and cold-atom experiments are pushing the capabilities of computational approaches to study wave packets out of equilibrium, and in response to sudden changes in potentials. Stochastic dynamics are being devised based on time-dependent variational principles to access longer time scales of correlated phenomena beyond the linear response regime.
             </p>
+            <p align="justify">
+                This work is being undertaken in collaboration with <a href=https://www.kcl.ac.uk/nms/depts/physics/people/academicstaff/bhaseen.aspx>Dr. Joe Bhaseen</a> as part of the CANES CDT in non-equilibrium systems.</p>
         </section>
     </div>
 </div>
@@ -92,7 +101,7 @@ layout: default
 
 		<section class="box special">
             <h3>Software Infrastructure</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/neci.jpg" alt="" align="middle" style="height:100%;width:100%;" /></span>
             <p align="justify">
                 blah
             </p>
