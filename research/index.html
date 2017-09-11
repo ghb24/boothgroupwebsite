@@ -31,11 +31,11 @@ layout: default
 
 		<section class="box special">
             <h3>Stochastic Approaches To Tensor Network States</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+			<span style="vertical-align:middle"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:100%;width:100%;" /></span>
             <p align="justify">
-                We have been developing new approaches to optimize and stochastically sample certain classes of tensor network states which don't easily admit to an efficient deterministic approach. This allows for higher-dimensional networks to be considered, in a scalable approach. The approach combines ideas of projector Monte Carlo with the non-linear form of these Tensor Networks. Additionally, ideas from accelerated optimization techniques used to train neural networks render the approach scalable and robust. The above shows the spin correlation functions derived from this work of a two-dimensional, <em>ab initio</em> graphene sheet, published in <em>Physical Review Letters</em>, <strong>118</strong> 176403 (2017). This work is applied to lattice models, as well as realistic, extended systems.</p>
+                We have been developing new approaches to optimize and stochastically sample certain classes of tensor network states which don't easily admit to an efficient deterministic algorithm. This allows for higher-dimensional networks to be considered, in a scalable approach. The approach combines ideas of projector Monte Carlo with the non-linear form of these Tensor Networks. Additionally, ideas from accelerated optimization techniques used to train neural networks render the approach scalable and robust. The above shows the spin correlation functions derived from this work of a two-dimensional, <em>ab initio</em> graphene sheet, published in <em>Physical Review Letters</em>, <strong>118</strong> 176403 (2017). This work has been applied to lattice models, as well as realistic, extended systems, by projecting down to low-energy, reduced subspace models.</p>
             <p align="justify">
- Continuing developments are investigating coupling of the optimization to the stochastic sampling of auxiliary indices and moving towards entangled 2D networks.
+            Continuing developments are investigating coupling of the optimization to the stochastic sampling of auxiliary indices and moving towards entangled 2D networks, as well as a more efficient coupling to higher-energy degrees of freedom for a truly <em>ab initio</em> method.
             </p>
         </section>
     </div>
@@ -101,9 +101,12 @@ Since two-point correlation functions decay (generally exponentially fast in ins
 
 		<section class="box special">
             <h3>Software Infrastructure</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/neci.jpg" alt="" align="middle" style="height:100%;width:100%;" /></span>
             <p align="justify">
-                blah
+            We see an important part of developing new computational methods as ensuring that they are accessible to the wider community, to enable as wide a cross-section of researchers as possible to use these tools for their own purposes. This means that the group has a strong expertise in programming and developing accessible and efficient software. Furthermore, in order for these methods to compete with established methods and implementations, the developed codes need to be fast, robust, and parallelise across many computing cores. The need for this efficiency and scalability affects every design decision we make, from the nature of the approximations and development of the theory, to the implementation in terms of optimized algorithms.
+            </p>
+            <p align="justify">
+                <span class="image fit"><img src="{{ site.baseurl }}/assets/images/neci.jpg" alt="" align="right" style="height:40%;width:40%;margin:0px 20px" /></span>
+                To this end, we have a number of software packages which we develop in for different purposes. We are core developers of the <tt><a href=https://github.com/ghb24/NECI_STABLE>NECI</a></tt> software package, developed for efficient, parallelised FCIQMC calculations for a number of different systems. However, we also develop in a number of other packages, including <tt>PySCF</tt>, <tt>MOLPRO</tt>, <tt>VASP</tt> and others, depending on which code is best suited to the task at hand.
             </p>
         </section>
     </div>
@@ -111,10 +114,12 @@ Since two-point correlation functions decay (generally exponentially fast in ins
 
 		<section class="box special">
             <h3>Applications</h3>
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/GrapheneSpin.jpg" alt="" align="middle" style="height:140%;width:110%;" /></span>
+			<span style="vertical-align:middle"><img src="{{ site.baseurl }}/assets/images/water_LiH.jpg" alt="" align="middle" style="height:70%;width:70%;margin:0px 0px" /></span>
             <p align="justify">
-                blah
+            All methodological development in the group is motivated by applications of interest which are not adequately treated within established approximations and techniques. These span a wide array of quantum many-body problems, from strongly-correlated lattice models, such as the Hubbard or Heisenberg lattices, the high-accuracy description of small astrochemical molecules, the understanding of mechanisms of biological active sites, or the <em>ab initio</em> treatment of crystalline materials.
             </p>
+            <p align="justify">
+            Above is one such example, showing the absorption of water onto a Lithium Hydride surface - something which is poorly treated due to the lack of accurate dispersion interactions in Density Functional Theory, described in the paper entitled "<a href=http://aip.scitation.org/doi/full/10.1063/1.4984048>A comparison between quantum chemistry and quantum Monte Carlo techniques for the adsorption of water on the (001) LiH surface</a>".
         </section>
     </div>
 </div>
