@@ -25,11 +25,12 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
         <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon_i.ico">
 	</head>
-	{% if page.url == "/index.html" %}
+    <!-- {% if page.url == "/index.html" %} -->
 		<!-- Banner -->
 		<body class="landing">
 			<section id="banner">
 				<h2>Booth Group Research</h2>
+                <h2>{{ page.url }}</h2>
 				<p>A Research Group at King's College London in Computational Electronic Structure.</p>
                 <!-- 
 				<ul class="actions">
@@ -38,10 +39,12 @@
                 </ul>
                 -->
 			</section>
+    <!-- 
 	{% else %}
 		<body>
 			<section id="banner"></section>
 	{% endif %}
+    -->
 	{% include nav.html %}
 	<!-- Main -->
 	<section id="main" class="container">
