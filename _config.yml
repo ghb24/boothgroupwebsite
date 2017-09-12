@@ -1,6 +1,7 @@
 name: Booth Group Website 
 description:      "A Research Group at King's College London in Computational Electronic Structure"
-baseurl: '/boothgroupwebsite'
+#baseurl: '/boothgroupwebsite'
+baseurl: ''
 excerpt_separator: <!-- more -->
 markdown: kramdown
 author:
@@ -12,7 +13,6 @@ author:
 #url: "http://ghb24.github.io/boothgroupwebsite"
 #url: "http://localhost:4000"
 url: "http://www.boothgroupresearch.com"
-baseurl: "/boothgroupwebsite"
 
 paginate: 10
 
