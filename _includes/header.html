@@ -25,7 +25,12 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
         <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon_i.ico">
 	</head>
-    {% if page.url == "/index.html" %}
+    <!--
+    {% comment %}
+         if page.url == "/index.html" 
+    {% endcomment %}
+    -->
+    {% if page.title == "Home" %}
 		<!-- Banner -->
 		<body class="landing">
 			<section id="banner">
