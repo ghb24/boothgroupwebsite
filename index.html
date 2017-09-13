@@ -22,8 +22,9 @@ layout: default
             {% assign content = post.excerpt %}
             {% assign title = post.title %}
 
+            <!-- <strong><p>{{ title }}</p></strong> -->
             <strong><p>{{ title }}</p></strong>
-            <p align="justify">{{ post.excerpt | strip_html }}</p>
+            <p align="justify">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
             <!-- <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p> -->
 			<ul class="actions">
                 <li><a href="{{site.baseurl}}{{post.url}}" class="button alt">See full post</a></li>

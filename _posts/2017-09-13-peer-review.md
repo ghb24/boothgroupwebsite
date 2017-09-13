@@ -2,9 +2,8 @@
 title: Peer Review 
 layout: post
 ---
-
 <p align='justify'>
-I'm guessing that not many of you had this in your diaries, but this week is apparently <em>'Peer Review Week'</em>. While I'm not quite sure as to its point, it makes a good excuse to think a little about this strange system that many of us take for granted. This year was particularly relevant because Nature publishing group got into contact with me as they wanted a few interviews and discussions about peer review - both from an 'author' and a 'reviewer' perspective. It was very interesting thinking about this strange system, and going to their luxury AV studios to film it, and you can see the results <a href='https://masterclasses.nature.com/courses/205'>here</a>.
+I'm guessing that not many of you had this in your diaries, but this week is apparently <em>'Peer Review Week'</em>. While I'm not quite sure as to its point, it makes a good excuse to think a little about this strange system that many of us take for granted. This year was particularly relevant because Nature publishing group got into contact with me as they wanted a few interviews and discussions about peer review - both from an 'author' and a 'reviewer' perspective. It was very interesting thinking about this strange system, and going to their luxury AV studios to film it, and you can see the results <a href='https://masterclasses.nature.com/users/59211-dr-george-booth'>here</a>.
 </p>
 
 <!-- more -->
