@@ -1153,17 +1153,17 @@
 /* Banner */
 
 	#banner {
-		/* background-attachment:	scroll,							fixed; */
-		background-attachment:	fixed;
+		background-attachment:	scroll,							fixed;
+		/* background-attachment:	fixed; */
 		background-color:		#666;
-		background-image:		url('../images/kings_blur.png');
-		background-position:	center center;
-		background-repeat:		no-repeat;
-		background-size:		cover;
-		/* background-image:		url('images/overlay.png'),		url('../images/kings_blur.png'); */
-		/* background-position:	top left,						center center; */
-		/* background-repeat:		repeat,							no-repeat; */
-		/* background-size:		auto,							cover;  */
+		/* background-image:		url('../images/kings_blur.png'); */
+		/* background-position:	center center; */
+		/* background-repeat:		no-repeat; */
+		/* background-size:		cover; */
+		background-image:		url('images/overlay.png'),		url('../images/kings_blur.png');
+		background-position:	top left,						center center;
+		background-repeat:		repeat,							no-repeat;
+		background-size:		auto,							cover; 
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
