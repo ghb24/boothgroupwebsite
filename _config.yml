@@ -1,9 +1,18 @@
 name: Booth Group Website 
-description:      "A Research Group at King's College London in Computational Electronic Structure"
+title: 'Booth Research Group Website at Kings College London'
+description: "A Research Group at King's College London Physics Department in Computational Electronic Structure and Quantum Chemistry"
 #baseurl: '/boothgroupwebsite'
 baseurl: ''
 excerpt_separator: <!-- more -->
 markdown: kramdown
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
 author:
   name:           'George Booth'
   email:          george.booth24@gmail.com
